@@ -214,14 +214,14 @@ if __name__ == "__main__":
             parse(str, parsing_table)
 
             # On successful parsing
-            print(f"{bcolors.OKGREEN}Valid String{bcolors.ENDC}")
+            print(f"{bcolors.OKGREEN}{bcolors.BOLD}Valid String{bcolors.ENDC}")
             print("\n")
 
         except TokenizerError as e:
-            print(f"Encountered error: {bcolors.FAIL}TokenizerError{bcolors.ENDC}")
+            print(f"Encountered error: {bcolors.FAIL}{bcolors.BOLD}TokenizerError{bcolors.ENDC}")
             print(f"Error Details: {e}")
             print("\n")
         except ParserError as e:
-            print(f"Encountered error: {bcolors.FAIL}ParserError{bcolors.ENDC}")
+            print(f"Encountered error: {bcolors.FAIL}{bcolors.BOLD}ParserError{bcolors.ENDC}")
             print(f"Error Details: {e}")
             print("\n")
